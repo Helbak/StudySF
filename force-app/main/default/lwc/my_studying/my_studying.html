@@ -1,0 +1,33 @@
+<template>
+
+
+    <span class="slds-avatar slds-avatar_circle slds-avatar_large">
+        <img alt="avatar" src={she} title="avatar" />
+    </span>
+
+    <div class="slds-badge slds-theme_success" style="font-size:24px;margin-left:5%;margin-top:2%;">
+        {nameComponent}
+    </div>
+
+    <div class="slds-text-heading_large">Your userId: {userId}</div>
+    <div class="slds-text-heading_large">Community Id: {communityName}</div>
+    <div class="slds-text-heading_large">Record Id: {recordId}</div>
+    <div class="slds-text-heading_large">Object Api Name: {objectApiName}</div>
+    <div class="slds-text-heading_large">Your sqreen is: {form}</div>
+  
+ 
+</br>
+<div class="slds-text-heading_large">lightning-record-view-form:</div>
+    <lightning-record-view-form record-id={userId} object-api-name="User">
+        
+        <div class="slds-box">
+            <lightning-output-field field-name="Name"></lightning-output-field>
+            <lightning-output-field field-name="Username"></lightning-output-field>
+            <lightning-output-field field-name="MediumBannerPhotoUrl"></lightning-output-field>
+            <lightning-output-field field-name="IsPortalEnabled"></lightning-output-field>
+            <lightning-output-field field-name="IsProfilePhotoActive"></lightning-output-field>
+            <lightning-output-field field-name="Username"></lightning-output-field>
+        </div>
+    </lightning-record-view-form>
+
+</template>
