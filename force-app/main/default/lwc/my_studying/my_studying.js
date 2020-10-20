@@ -8,6 +8,7 @@ export default class My_studying extends LightningElement {
     @api nameComponent;
     @api recordId;
     @api objectApiName;
+    myName = "Vas";
    
   
     form = formFactorPropertyName;
